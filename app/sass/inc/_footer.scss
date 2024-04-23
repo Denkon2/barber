@@ -1,0 +1,124 @@
+.page-footer {
+  padding: 40px 0;
+  margin-top: auto;
+  margin-bottom: 0;
+  background-color: #2b3038;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 13px;
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.footer {
+}
+.footer-copyright{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.scroll-top {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: -40px;
+  z-index: 1000;
+  opacity: 0;
+  border: 4px solid $orange;
+  transition: all 0.4s ease;
+  color: rgba(255, 255, 255, 0.2);
+}
+.scroll-top:hover{
+  color: $orange;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.scroll-top.visible {
+  right: 20px;
+  opacity: 1;
+}
+.form-popup {
+  visibility: hidden;
+  z-index: -100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  form {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  form.active {
+    visibility: visible;
+    position: relative;
+  }
+}
+.form-popup.active {
+  visibility: visible;
+  z-index: 99999;
+}
+.form-popup__body {
+  position: relative;
+  z-index: 20;
+  height: 100%;
+  overflow-y: auto;
+  .container {
+    position: relative;
+  }
+}
+.form-popup__body::-webkit-scrollbar {
+  width: 0;
+}
+.form-popup__body {
+  -ms-overflow-style: none;
+}
+.form-popup__body {
+  overflow: -moz-scrollbars-none;
+}
+
+.form__wrap {
+  position: relative;
+}
+.form__label {
+  position: relative;
+}
+.form__input-text {
+}
+.form__input-tel {
+}
+.form__input-email {
+}
+.form__checkbox {
+}
+.form__input-checkbox {
+}
+.form__footer {
+}
+.form__result {
+}
+.form__btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+.form-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}

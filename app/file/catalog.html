@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./file/inc/head.html')
+
+  <body id="home">
+    <div id="overlay">
+      <div id="progstat"></div>
+      <div id="progress"></div>
+  </div>
+    <div class="wrapper">
+      @@include('./file/inc/header.html') 
+      @@include('./file/inc/catalog.html')
+
+      <div class="section contact">
+        <div class="container">
+          <div class="contact__links display-flex justify-between">
+            <div class="contact__link wow fadeIn">
+              <div class="contact__link-svg display-flex">
+                <span class="svg-ico replaced-svg"
+                  ><img src="img/home-1/phone.svg" alt="ico" class="svg"
+                /></span>
+              </div>
+              <div class="contact__link-title">Телефон</div>
+              <a href="" class="contact__link-link" target="_blank"
+                >+7 (495) 456-78-90</a
+              >
+            </div>
+            <div class="contact__link wow fadeIn">
+              <div class="contact__link-svg display-flex">
+                <span class="svg-ico replaced-svg"
+                  ><img src="img/home-1/inst.svg" alt="ico" class="svg"
+                /></span>
+              </div>
+              <div class="contact__link-title">Instagram</div>
+              <a href="" class="contact__link-link" target="_blank"
+                >@mobile.barbershop</a
+              >
+            </div>
+            <div class="contact__link wow fadeIn">
+              <div class="contact__link-svg display-flex">
+                <span class="svg-ico replaced-svg"
+                  ><img src="img/home-1/tg.svg" alt="ico" class="svg"
+                /></span>
+              </div>
+              <div class="contact__link-title">Telegram</div>
+              <a href="" class="contact__link-link" target="_blank"
+                >mobile.barbershop</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section bottom-form" data-anime="bounce" id="section-2">
+        <div class="container">
+          <div class="section__title text-center bottom-form__title">
+            Отправьте сообщение
+          </div>
+          <div class="section-body">
+            <form
+              action=""
+              method="post"
+              class="form form1"
+              novalidate
+              autocomplete="off"
+            >
+              <div class="form__wrap">
+                <div class="columns columns-3">
+                  <div class="column">
+                    <label for="#name-user" class="form__label display-block"
+                      >Ваше имя:</label
+                    >
+                    <input
+                      type="text"
+                      name="name-user"
+                      id="name-user"
+                      class="form__input-text"
+                      autocomplete="n-t"
+                      required
+                    />
+                  </div>
+                  <div class="column">
+                    <label for="#phone-user" class="form__label display-block"
+                      >Ваш телефон:</label
+                    >
+                    <input
+                      type="tel"
+                      name="phone-user"
+                      id="phone-user"
+                      class="form__input-tel"
+                      autocomplete="nt-1"
+                      required
+                    />
+                  </div>
+                  <div class="column">
+                    <label for="#email-user" class="form__label display-block"
+                      >Ваш email:</label
+                    >
+                    <input
+                      type="email"
+                      name="email-user"
+                      id="email-user"
+                      class="form__input-email"
+                      autocomplete="nt-2"
+                      required
+                    />
+                  </div>
+                </div>
+                <div
+                  class="form__checkbox display-flex justify-center align-center"
+                >
+                  <input
+                    type="checkbox"
+                    value="1"
+                    name="true-agreement"
+                    id="true-agreement"
+                    class="form__input-checkbox"
+                    checked
+                    required
+                  />
+                  <label for="true-agreement"
+                    >Я принимаю соглашение о
+                    <a href="#">персональных данных</a></label
+                  >
+                </div>
+                <div
+                  class="form__footer display-flex justify-center align-center"
+                >
+                  <button
+                    type="submit"
+                    class="btn btn-default bottom-form__btn"
+                  >
+                    Отправить заявку
+                  </button>
+                </div>
+              </div>
+              <div class="form__result"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      @@include('./file/inc/footer.html')
+    </div>
+    <!-- wrapper -->
+
+    @@include('./file/inc/form-popup.html') @@include('./file/inc/scripts.html')
+  </body>
+</html>

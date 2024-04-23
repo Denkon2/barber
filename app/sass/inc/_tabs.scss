@@ -1,0 +1,38 @@
+.block-tabs {
+}
+.tabs {
+}
+.tabs-nav {
+}
+.tabs-nav__item {
+    padding: 5px 15px;
+    cursor: pointer;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+.tabs-nav__item:last-child{
+    border-right: 1px solid #ddd;
+}
+.tabs-nav__item.active,
+.tabs-nav__item:hover{
+    color: $green;
+}
+.tabs-content {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.tabs-content__block {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.25s ease-in;
+    padding: 20px;
+}
+.tabs-content__block.active{
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+}

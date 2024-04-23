@@ -1,0 +1,129 @@
+.monomanbarber {
+  padding-bottom: 0;
+  padding-top: 145px;
+  .monomanbarber__title{
+    margin-bottom: 62px;
+  }
+}
+.monomanbarber::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 86.87px;
+  height: 96.75px;
+  background: url(../img/home-1/section-ico.png) no-repeat;
+}
+.monomanbarber::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: 0;
+  width: 282px;
+  height: 83px;
+  background: #fc6b3a;
+}
+.monomanbarber__container {
+  max-width: 82%;
+}
+.monomanbarber__title {
+  > span {
+    font-size: 72px;
+    display: inline-block;
+    margin-left: 68px;
+  }
+  > span span {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #f0d9bf;
+  }
+}
+.monomanbarber__left-col {
+  max-width: 650px;
+}
+.monomanbarber__img {
+  position: relative;
+  img {
+    position: relative;
+    z-index: 2;
+  }
+}
+.monomanbarber__img::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 96%;
+  border-left: 14px solid #fc6b3a;
+  z-index: 3;
+}
+.monomanbarber__img::after {
+  content: "";
+  position: absolute;
+  left: -6px;
+  bottom: 0;
+  width: 100%;
+  max-width: 88%;
+  height: 100%;
+  max-height: calc(96% - 14px);
+  border: 14px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0;
+  z-index: 1;
+}
+.monomanbarber__right-col {
+  width: calc(100% - 650px);
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 1px;
+  position: relative;
+  padding-left: 52px;
+  p {
+    max-width: 465px;
+  }
+}
+.monomanbarber__right-col::after,
+.monomanbarber__right-col::before {
+  content: "";
+  position: absolute;
+  right: 16%;
+  bottom: 0;
+  background: url(../img/home-1/bg-t-2.png) repeat-x right bottom;
+  width: 300px;
+  height: 400px;
+  transition: all 0.5s linear;
+}
+.monomanbarber__right-col::before{
+    opacity: 0;
+    background: url(../img/home-1/bg-t-2-2.png) no-repeat right bottom;
+    width: 0;
+    height: 0;
+}
+/* .monomanbarber__right-col:hover::after{
+    width: 0;
+    height: 0;
+}
+.monomanbarber__right-col:hover::before{
+    width: 300px;
+    height: 400px;
+    opacity: 0.7;
+} */
+.monomanbarber__btns {
+  margin-top: 177px;
+
+  .btn {
+    width: 258px;
+    min-height: 62px;
+    font-size: 18px;
+    color: #181c22;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
